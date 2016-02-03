@@ -20,20 +20,21 @@ var s7;
 myFirebaseRef.child("DescIndia").on("value", function(snapshot) {
   s7 = snapshot.val();  
 	document.getElementById("t7").innerHTML = s7;
-});
+	});
 
 var s5;
 myFirebaseRef.child("DesAPJ").on("value", function(snapshot) {
   s5 = snapshot.val();  
 	document.getElementById("t5").innerHTML = s5;
-});
+	});
 
 var s6;
 myFirebaseRef.child("DescIgnited").on("value", function(snapshot) {
   s6 = snapshot.val();  
 	document.getElementById("t6").innerHTML = s6;
-});
+	});
 
+/*
 function setChoice(i){
 if(i===1)
 	sessionStorage.setItem('index',1);
@@ -44,4 +45,4 @@ function loadBlockContent()
 var index=sessionStorage.getItem('index');
 if(index===1)
 	document.getElementById("demo").innerHTML = s5;
-}
+} */
