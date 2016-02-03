@@ -3,29 +3,7 @@
 <link rel="stylesheet" type="text/css" href="fire.css">  
 <script src="fire.js" type="text/javascript"></script>
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-<script>
-var myFirebaseRef = new Firebase("https://booksinformation.firebaseio.com/");
-
-myFirebaseRef.child("Title").on("value", function(snapshot) {
-  var s1 = snapshot.val(); 
-  document.getElementById("d1").innerHTML = s1;
-});
-
-myFirebaseRef.child("Author").on("value", function(snapshot) {
-  var s2 = snapshot.val(); 
-  document.getElementById("d2").innerHTML = s2;
-});
-
-myFirebaseRef.child("Price").on("value", function(snapshot) {
-  var s3 = snapshot.val();  
-  document.getElementById("d3").innerHTML = s3;
-});
-
-myFirebaseRef.child("Language").on("value", function(snapshot) {
-  var s4 = snapshot.val();   
-  document.getElementById("d4").innerHTML = s4;
-});
-</script>
+<script src="var_fire.js" type="text/javascript"></script>
     </head> 
 <body>
 
@@ -53,28 +31,36 @@ ArcView’s estimate for the legal cannabis industry is $5.4 billion for 2015, a
 
 According to a piece published this morning by Greg Buzek, President of IHL Services, only 8.5% of merchants are able to accept the new cards, which he describes as “EMV ready.” At last count, less than 40% of consumer debit and credit cards contained the necessary chip in any case.</p>
 </div>
- <div class="content"> 
+ <div class="content" id-"link"> 
 <p><h1>LATEST NEWS</h1>  
 
+
 <div class="news">
-<h3>Title</h3>
-<p id="d1"></p>
-<p><a href="firenext.html">Read more</a></p>
-</div>
-<div class="news">
-<h3>Author</h3>
+<h3>APJ Abdul Kalam</h3>
 <p id="d2"></p>
-<p><a href="firenext.html">Read more</a></p>
+<p>Avul Pakir Jainulabdeen "A. P. J." Abdul Kalam (Listeni/ˈæbdʊl kəˈlɑːm/; 15 October 1931 – 27 July 2015) was the 11th President of India from 2002 to 2007. A career scientist turned politician, Kalam was born and raised in Rameswaram, Tamil Nadu, and studied physics and aerospace engineering.......</p>
+<p><a href="firenext.html" & Key = s5>Read more</a></p>
 </div>
- <div class="news">
-<h3>Price</h3>
-<p id="d3"></p>
-<p><a href="firenext.html">Read more</a></p>
- </div>
+
 <div class="news">
-<h3>Language</h3>
-<p id="d4"></p>
-<p><a href="firenext.html">Read more</a></p>
+<h3>Wings of fire</h3>
+<p id="d2"></p>
+<p>Wings of Fire: An Autobiography of APJ Abdul Kalam (1999) is an autobiography of A P J Abdul Kalam, former President of India. It was written by Dr. Kalam and Arun Tiwari.[1] Kalam examines his early life, effort, hardship......</p>
+<p><a href="firenext.html" & Key = s3>Read more</a></p>
+</div>
+
+ <div class="news">
+<h3>Ignited Minds</h3>
+<p id="d2"></p>
+<p>Ignited minds is a book written by scientist-patriot Dr. A P J Abdul Kalam, who was the President of India ......</p>
+<p><a href="firenext.html" & Key = s6>Read more</a></p>
+ </div>
+ 
+<div class="news">
+<h3>India2020</h3>
+<p id="d2"></p>
+<p>The book examines in depth the weakness and the strength of India, and offers a......</p>
+<p><a href="firenext.html" & Key = s7>Read more</a></p>
 </div>
 </div>
 </div>
