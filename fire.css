@@ -83,6 +83,9 @@ flex-grow: 1;
 	padding: 10px;
 	box-sizing: border-box;
 	flex-grow: 1;
+	overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow:ellipsis;
 }
 
 @media screen and (max-width: 900px){

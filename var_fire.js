@@ -2,31 +2,46 @@ var myFirebaseRef = new Firebase("https://booksinformation.firebaseio.com/");
 
 myFirebaseRef.child("Title").on("value", function(snapshot) {
   var s1 = snapshot.val(); 
-  document.getElementById("d1").innerHTML = s1;
+  //document.getElementById("d1").innerHTML = s1;
 });
 
-myFirebaseRef.child("Author").on("value", function(snapshot) {
+myFirebaseRef.child("Author").on("value", function(snapshot) {	
   var s2 = snapshot.val(); 
-  document.getElementById("d2").innerHTML = s2;
+  //document.getElementById("d2").innerHTML = s2;
 });
 
+var s3;
 myFirebaseRef.child("DescWings").on("value", function(snapshot) {
-  var s3 = snapshot.val();  
-  document.getElementById("demo").innerHTML = s3;
+  s3 = snapshot.val();  
+  document.getElementById("t3").innerHTML = s3;
 });
 
+var s7;
 myFirebaseRef.child("DescIndia").on("value", function(snapshot) {
-  var s7 = snapshot.val();  
-	document.getElementById("demo").innerHTML = s7;
+  s7 = snapshot.val();  
+	document.getElementById("t7").innerHTML = s7;
 });
 
+var s5;
 myFirebaseRef.child("DesAPJ").on("value", function(snapshot) {
-  var s5 = snapshot.val();  
-	document.getElementById("demo").innerHTML = s5;
+  s5 = snapshot.val();  
+	document.getElementById("t5").innerHTML = s5;
 });
 
+var s6;
 myFirebaseRef.child("DescIgnited").on("value", function(snapshot) {
-  var s6 = snapshot.val();  
-	document.getElementById("demo").innerHTML = s6;
+  s6 = snapshot.val();  
+	document.getElementById("t6").innerHTML = s6;
 });
 
+function setChoice(i){
+if(i===1)
+	sessionStorage.setItem('index',1);
+	
+}
+function loadBlockContent()
+{
+var index=sessionStorage.getItem('index');
+if(index===1)
+	document.getElementById("demo").innerHTML = s5;
+}
